@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* @plugin "daisyui"; */
+
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  
+  --color-mainBg: #ffffff;
+  --color-navbarBg: #f2f6f4;
+  --color-lightGreen: #eafff0;
+  --color-yellow: #fdcd31;
+  --color-black: #000000;
+  
+  --font-montserrat: "Montserrat", sans-serif;
+  
+  --font-weight-regular: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extraBold: 900;
+}
