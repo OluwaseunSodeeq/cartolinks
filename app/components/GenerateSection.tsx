@@ -65,14 +65,28 @@ export function GenerateSection() {
           {items.map(({ label, Icon, text }, idx) => (
             <div
               key={idx}
-              className="pointer-cursor flex w-[15rem] xl:w-[19rem] gap-x-3 items-center text-center shadow-md py-2 px-2"
+              className={`"pointer-cursor flex w-[15rem] xl:w-[19rem] gap-x-3 items-center text-center shadow-md py-2 px-2 rounded-md  ${
+                theme === "dark" ? "bg-navyBlue" : "bg-mainBg"
+              }`}
             >
               <div className="p-4 bg-white rounded-full shadow-sm mb-2">
                 <Icon size={32} className="text-gray-700" />
               </div>
               <div className="text-left">
-                <span className="text-base font-bold">{label}</span>
-                <p className="text-base">{text}</p>
+                <h4
+                  className={`text-base font-bold ${
+                    theme === "dark" ? "text-mainBg" : "text-black"
+                  }`}
+                >
+                  {label}
+                </h4>
+                <p
+                  className={`text-base ${
+                    theme === "dark" ? "text-mainBg" : "text-black"
+                  }`}
+                >
+                  {text}
+                </p>
               </div>
             </div>
           ))}
