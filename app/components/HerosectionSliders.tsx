@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
@@ -133,9 +134,11 @@ export default function HerosectionSliders() {
               />
               <div className="absolute inset-0 bg-black/40 flex flex-col justify-center p-10 text-white">
                 <h2 className="text-3xl font-bold">{slide.title}</h2>
-                <p className="mt-2 w-[10rem] ">{slide.desc}</p>
+                <p className="mt-2 w-[20rem] ">{slide.desc}</p>
                 <button className="w-[200px] mt-4 px-4 py-2 bg-white text-black rounded-lg">
-                  {slide.button}
+                  <Link href="https://oluwaseunsodeeq.github.io/">
+                    {slide.button}
+                  </Link>
                 </button>
               </div>
             </div>
